@@ -29,8 +29,6 @@ def run():
 
     driver = webdriver.Chrome(ChromeDriverManager().install())
 
-    #yeram-trossjo
-    #whgdms3253
     driver.get('http://yeram.hunet.co.kr/Login/LoginGate')
     driver.implicitly_wait(15)
     driver.find_element(By.NAME, 'ID').send_keys(user_id.get())
